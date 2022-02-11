@@ -1,1 +1,1 @@
-# realtime-sneeze-detection
+# realtime-respiratory-event-detection
