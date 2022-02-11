@@ -5,9 +5,6 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import precision_recall_fscore_support
 
 def show_stats(y_true, y_pred):
-    # convert one-hot / softmax to class labels list
-    # y_true = [np.argmax(y_i) for y_i in y_true]
-    # y_pred = [np.argmax(y_i) for y_i in y_pred]
     y_pred = np.where(y_pred < 0.5, 0, 1)
 
     print("Confusion Matrix :")
